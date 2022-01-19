@@ -18,6 +18,7 @@
 		90C3F2F427987E1D00818726 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F327987E1D00818726 /* DetailViewController.swift */; };
 		90C3F2F62798879A00818726 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F52798879A00818726 /* Creature.swift */; };
 		90C3F2F827988A8F00818726 /* CreatureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F727988A8F00818726 /* CreatureDetail.swift */; };
+		90C3F2FE2798C58700818726 /* UpdatedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2FD2798C58600818726 /* UpdatedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		90C3F2F327987E1D00818726 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		90C3F2F52798879A00818726 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		90C3F2F727988A8F00818726 /* CreatureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetail.swift; sourceTree = "<group>"; };
+		90C3F2FD2798C58600818726 /* UpdatedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				90C3F2F727988A8F00818726 /* CreatureDetail.swift */,
 				90C3F2F52798879A00818726 /* Creature.swift */,
 				90C3F2EF279617A700818726 /* PokemonTableViewCell.swift */,
+				90C3F2FD2798C58600818726 /* UpdatedTableViewCell.swift */,
 				90C3F2E1279614C200818726 /* Main.storyboard */,
 				90C3F2E4279614C500818726 /* Assets.xcassets */,
 				90C3F2E6279614C500818726 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 				90C3F2F427987E1D00818726 /* DetailViewController.swift in Sources */,
 				90C3F2F827988A8F00818726 /* CreatureDetail.swift in Sources */,
 				90C3F2DC279614C200818726 /* AppDelegate.swift in Sources */,
+				90C3F2FE2798C58700818726 /* UpdatedTableViewCell.swift in Sources */,
 				90C3F2DE279614C200818726 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
