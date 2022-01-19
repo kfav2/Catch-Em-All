@@ -51,7 +51,6 @@ class Creatures {
             }
             do {
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
-                print("Here is what was returned \(returned)")
                 self.creatureArray = self.creatureArray + returned.results
                 self.urlString = returned.next ?? ""
                 self.count = returned.count
