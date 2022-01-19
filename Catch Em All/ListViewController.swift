@@ -33,6 +33,14 @@ class ListViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            let destination = segue.destination as! DetailViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.creature = creatures.creatureArray[selectedIndexPath.row]
+        }
+    }
+    
     func setUpActivityIndicator() {
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
@@ -40,6 +48,9 @@ class ListViewController: UIViewController {
         activityIndicator.color = UIColor.red
         view.addSubview(activityIndicator)
     }
+    
+    
+    
     func loadAll() {
         if creatures.urlString.hasPrefix("http") {
             creatures.getData {

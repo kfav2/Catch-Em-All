@@ -1,32 +1,38 @@
 //
-//  Creatures.swift
+//  CreatureDetail.swift
 //  Catch Em All
 //
-//  Created by Korlin Favara on 1/17/22.
+//  Created by Korlin Favara on 1/19/22.
 //
 
 import Foundation
 
-struct CreaturesParsed {
-    var count: Int
-    var next: String?
-    var name: String
-}
-
-class Creatures {
+class CreatureDetail {
     
     private struct Returned: Codable {
-        var count: Int
-        var next: String?
-        var results: [Creature]
+        var height: Double
+        var weight: Double
+        var sprites: Sprites
     }
     
-
+    private struct Sprites: Codable {
+        var other: Other
+    }
     
-    var count = 0
-    var urlString = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20"
-    var creatureArray: [Creature] = []
+    private struct Other: Codable {
+        var home: Home
+    }
     
+    private struct Home: Codable {
+        var front_default: String
+        var front_shiny: String
+    }
+    
+    var height = 0.0
+    var weight = 0.0
+    var imageURL = ""
+    var imageShinyURL = ""
+    var urlString = ""
     
     func getData(completed : @escaping () -> ()) {
         print("We are accessing url from \(urlString)")
@@ -48,9 +54,13 @@ class Creatures {
             }
             do {
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
-                self.creatureArray = self.creatureArray + returned.results
-                self.urlString = returned.next ?? ""
-                self.count = returned.count
+//                self.creatureArray = self.creatureArray + returned.results
+//                self.urlString = returned.next ?? ""
+//                self.count = returned.count
+                self.height = returned.height
+                self.weight = returned.weight
+                self.imageURL = returned.sprites.other.home.front_default
+                self.imageShinyURL = returned.sprites.other.home.front_shiny
             } catch {
                 print("JSON ERROR: Thrown when we tried to decode for Returned.self")
             }
