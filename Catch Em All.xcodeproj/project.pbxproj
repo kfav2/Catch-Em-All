@@ -13,7 +13,6 @@
 		90C3F2E3279614C200818726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C3F2E1279614C200818726 /* Main.storyboard */; };
 		90C3F2E5279614C500818726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C3F2E4279614C500818726 /* Assets.xcassets */; };
 		90C3F2E8279614C500818726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C3F2E6279614C500818726 /* LaunchScreen.storyboard */; };
-		90C3F2F0279617A700818726 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2EF279617A700818726 /* PokemonTableViewCell.swift */; };
 		90C3F2F227961B2800818726 /* Creatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F127961B2800818726 /* Creatures.swift */; };
 		90C3F2F427987E1D00818726 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F327987E1D00818726 /* DetailViewController.swift */; };
 		90C3F2F62798879A00818726 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C3F2F52798879A00818726 /* Creature.swift */; };
@@ -30,7 +29,6 @@
 		90C3F2E4279614C500818726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90C3F2E7279614C500818726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90C3F2E9279614C500818726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90C3F2EF279617A700818726 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		90C3F2F127961B2800818726 /* Creatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creatures.swift; sourceTree = "<group>"; };
 		90C3F2F327987E1D00818726 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		90C3F2F52798879A00818726 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				90C3F2F127961B2800818726 /* Creatures.swift */,
 				90C3F2F727988A8F00818726 /* CreatureDetail.swift */,
 				90C3F2F52798879A00818726 /* Creature.swift */,
-				90C3F2EF279617A700818726 /* PokemonTableViewCell.swift */,
 				90C3F2FD2798C58600818726 /* UpdatedTableViewCell.swift */,
 				90C3F2E1279614C200818726 /* Main.storyboard */,
 				90C3F2E4279614C500818726 /* Assets.xcassets */,
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C3F2E0279614C200818726 /* ListViewController.swift in Sources */,
-				90C3F2F0279617A700818726 /* PokemonTableViewCell.swift in Sources */,
 				90C3F2F227961B2800818726 /* Creatures.swift in Sources */,
 				90C3F2F62798879A00818726 /* Creature.swift in Sources */,
 				90C3F2F427987E1D00818726 /* DetailViewController.swift in Sources */,
