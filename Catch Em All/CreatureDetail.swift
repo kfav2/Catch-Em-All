@@ -12,17 +12,18 @@ class CreatureDetail {
     private struct Returned: Codable {
         var height: Double
         var weight: Double
-        var sprites: Sprites
+        var sprites: Sprites!
     }
     
     private struct Sprites: Codable {
-        var other: Other
+        var front_shiny: String
+        var other: Other!
     }
-    
+
     private struct Other: Codable {
         var home: Home
     }
-    
+
     private struct Home: Codable {
         var front_default: String
         var front_shiny: String
@@ -31,6 +32,7 @@ class CreatureDetail {
     var height = 0.0
     var weight = 0.0
     var imageURL = ""
+    var ogImageShinyURL = ""
     var imageShinyURL = ""
     var urlString = ""
     
@@ -61,6 +63,7 @@ class CreatureDetail {
                 self.weight = returned.weight
                 self.imageURL = returned.sprites.other.home.front_default
                 self.imageShinyURL = returned.sprites.other.home.front_shiny
+                self.ogImageShinyURL = returned.sprites.front_shiny
             } catch {
                 print("JSON ERROR: Thrown when we tried to decode for Returned.self")
             }

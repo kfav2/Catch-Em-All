@@ -24,9 +24,9 @@ class Creatures {
 
     
     var count = 0
-    var urlString = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20"
+    var urlString = ""
     var creatureArray: [Creature] = []
-    
+    var twentyReturned: [Creature] = []
     
     func getData(completed : @escaping () -> ()) {
         print("We are accessing url from \(urlString)")
@@ -51,6 +51,7 @@ class Creatures {
                 self.creatureArray = self.creatureArray + returned.results
                 self.urlString = returned.next ?? ""
                 self.count = returned.count
+                self.twentyReturned = returned.results
             } catch {
                 print("JSON ERROR: Thrown when we tried to decode for Returned.self")
             }
